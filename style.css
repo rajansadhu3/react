@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.justify-centre {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.align-centre {
+  align-items: center;
+}
+.no-list-style {
+  list-style-type: none;
+}
+.text-decor-none {
+  text-decoration: none;
+}
+a {
+  color: #fe5005;
+  transition: 2s all;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/**** Genric ends **/
+
+.header {
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 2px 4px 7px #ccc;
+}
+.navItems ul {
+  gap: 15px;
+  padding: 0px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #676767;
+}
+.search {
+  margin: 20px 20px;
+}
+.resContainer {
+  padding: 20px 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.resturantCard {
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 120px;
+  box-shadow: 0px 0px 15px #ccc;
+}
+.resturantCard img {
+  width: 100%;
+}
+h2 {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.footer {
+  border-top: 1px solid #ccc;
+  box-shadow: 0px 6px 20px #000;
+}
