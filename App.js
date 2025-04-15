@@ -50,7 +50,7 @@ const Header = () => {
           </li>
           <li>
             <a className="text-decor-none" href="/">
-              Cart
+              Cartss
             </a>
           </li>
         </ul>
@@ -85,17 +85,18 @@ const Body = () => {
   );
 };
 
-const Resturant = () => {
+const Resturant = (props) => {
+  const { name, location, cusines, ratings } = props;
   return (
     <div className="resturantCard">
       <div className="topImage">
         <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/7cbf96b9-d578-44e8-a3c5-cd8ce2facc22_220652.jpg" />
       </div>
       <div className="bottomContent">
-        <h2>Resturnat Name</h2>
-        <h3>Location : Gandhinagar</h3>
-        <p>Birayani, pizza, food</p>
-        <p>Ratings: 4.4s</p>
+        <h2>Resturnat Name: {name}</h2>
+        <h3>Location : {location}</h3>
+        <p>{cusines}</p>
+        <p>Ratings: {ratings}</p>
       </div>
     </div>
   );
@@ -103,12 +104,12 @@ const Resturant = () => {
 const ResturantContainer = () => {
   return (
     <div className="resContainer">
-      <Resturant />
-      <Resturant />
-      <Resturant />
-      <Resturant />
-      <Resturant />
-      <Resturant />
+      <Resturant
+        name="KFC"
+        location="Gandhinagar"
+        cusines="Pizza, Birayani, food"
+        ratings="4.1"
+      />
     </div>
   );
 };
