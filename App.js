@@ -107,6 +107,8 @@ const ResturantContainer = () => {
       <Resturant />
       <Resturant />
       <Resturant />
+      <Resturant />
+      <Resturant />
     </div>
   );
 };
