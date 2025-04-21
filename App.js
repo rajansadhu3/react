@@ -1715,10 +1715,9 @@ const Resturant = (props) => {
 const ResturantContainer = () => {
   return (
     <div className="resContainer">
-      <Resturant resData={resturantList[0]} />
-      <Resturant resData={resturantList[1]} />
-      <Resturant resData={resturantList[2]} />
-      <Resturant resData={resturantList[3]} />
+      {resturantList.map((restro, index) => (
+        <Resturant key={index} resData={restro} />
+      ))}
     </div>
   );
 };
